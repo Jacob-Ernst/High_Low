@@ -5,7 +5,7 @@
   	
   	$numba1 = $argv[1];
   	$numba2 = $argv[2];
-  	$number = rand("$numba1", "$numba2");
+  	$number = rand($numba1, $numba2);
   }
 
  else {
