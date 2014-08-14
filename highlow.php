@@ -8,18 +8,23 @@
 
  	$guess = trim(fgets(STDIN));
 
- 	if ($guess > $number) {
+ 	if (! is_numeric($guess)) {
  	
+ 		echo "YOU NOOB!!!\n";
+ 	}
+ 	elseif ($guess > $number) {
  		echo "LOWER\n";
  	}
+
  	elseif ($guess < $number) {
  		
  		echo "HIGHER\n";
  	}
- 	else {
+ 	elseif ($guess = $number) {
 
  		echo "GOOD GUESS!\n";
  	}
+ 
  
  } while ( $guess > $number || $number > $guess);
 
