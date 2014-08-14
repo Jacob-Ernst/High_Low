@@ -1,6 +1,17 @@
 <?php
 
- $number = rand(1, 100);
+ 
+ if ($argc == 3 ) {
+  	
+  	$numba1 = $argv[1];
+  	$numba2 = $argv[2];
+  	$number = rand("$numba1", "$numba2");
+  }
+
+ else {
+
+ 	$number = rand(1, 100);
+ } 
  
  do {
  	
